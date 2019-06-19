@@ -1,11 +1,15 @@
 ---
 layout: post
-title:  "Should you learn PHP in 2019 - is it worth it?"
-author: john
-categories: [ PHP, Technologies, Skills ]
+title: Should you learn PHP in 2019 - is it worth it?
+author: amy
+categories:
+  - PHP
+  - Technologies
+  - Skills
+topcategory: Skills
+tags:
+  - sticky
 image: assets/images/5.jpg
-comments: false
-tags: [sticky]
 ---
 For those that don’t know, PHP stands for Hypertext Preprocessor and is a server-side programming language. For many years developers have been debating the place of PHP in the industry and whether it should be replaced with trendier technologies such as Node.JS or Ruby. 
 
@@ -13,7 +17,7 @@ It’s extremely common to see posts on web developer forums asking “Is PHP de
 
 To be able to definitively say whether you should learn php in 2019, you should understand what php is useful for and the reasons for it’s rocky reputation within the developer community. 
 
-##What PHP is useful for 
+## What PHP is useful for 
 
 Anything you want to do on a server can be done with PHP. Small sites? Yep. Large-scale interactive platforms? Yep, that too!
 
@@ -27,7 +31,7 @@ If you wanted to you could use PHP for the frontend in templating, however this 
 
 It’s also worth noting that PHP runs everywhere the web does. If you’re looking at cheap hosting for your project you will struggle to find one offering Python or Ruby, but you’ll definitely find one capable of running PHP which comes as default on most servers. 
 
-##PHP’s popularity in the web development industry
+## PHP’s popularity in the web development industry
 
 With all the constant “Is PHP dead?” questions being posted in forums, it's easy to make the assumption that PHP is on the way out and disregard it altogether - but that couldn’t be more wrong. 
 
@@ -35,7 +39,7 @@ Every year StackOverflow host their web developer survey which shows what langua
 
 So, why all the hate?
 
-###Poor security
+### Poor security
 
 Security tends to be the first topic developers shout about when trying to claim that PHP should no longer be used. Due to PHP’s quick and easy learning curve, it attracts many newer developers who could get a platform up and running without properly learning about security or how to enforce it. 
 
@@ -43,7 +47,7 @@ This lead to PHP’s reputation for being insecure. The problem is not with PHP 
 
 PHP itself can be very secure if you take the time to learn. 
 
-###Messy & unmaintainable code
+### Messy & unmaintainable code
 
 As mentioned above, PHP’s ease of use encouraged many generations of developers to start server side programming. 
 
@@ -53,41 +57,41 @@ The web is full of poorly written PHP code examples but that doesn’t mean that
 
 Is PHP considered a good language? Well, it has more than its share of strange, annoying features, but so does every other language. PHP is as good as the developer writing it.
 
-###PHP is immature
+### PHP is immature
 
 You may have heard this if you’ve been looking into PHP before, however whilst this may have been true many years ago, it certainly isn’t the case now, in 2019. 
 
 PHP began it’s life, not as a language but as a templating engine for HTML. As it’s purpose pivoted to become the framework it is today, it had some catching up to do with already existing frameworks (hence the immature label). It has continued evolving year after year, but many developers who tried it out in the early days have not kept up to date with it, and still have an outdated opinion. 
 
-##Why use PHP? 
+## Why use PHP? 
 
 It wouldn’t be fair to talk about the bad points without mentioning the good ones. 
 
-###Easy to get started with
+### Easy to get started with
 
 PHP has excellent online documentation and there are a number of good frameworks you can choose from. This makes the language relatively easy to learn and is often a developers first step into server side programming. 
 
 There are countless forums and tutorials on various PHP methods and problems so it is usually very easy to find help should you need it.
 
-###Flexible
+### Flexible
 
 PHP can be installed on any Windows, Linux or Unix server and can be integrated with a variety of databases to suit your needs and platform. 
 
 There are no solid rules on how to build features with PHP so you’re free to code as you like. The biggest benefit to this is you'll have more solutions available to you when it comes to solving problems. 
 
-###Solid community
+### Solid community
 
 A community to seek support is crucial when learning a new language, and thankfully, PHP has one of the largest. 
 
 In fact, PHP has the 3rd Largest StackOverflow Community, and is the 5th Most Popular language on GitHub. There are plenty of forums and the documentation is an excellent reference, meaning that you’ll never have to look too far for answers to your questions. 
 
-###No compiling required
+### No compiling required
 
 Many programming languages need to be compiled each time a change is made in order to update what your output looks like, but not with PHP.
 
 PHP has a very simple “refresh workflow” where you make a change to a source file, hit refresh, and instantly your changes are available. Not waiting on compilers can be a huge productivity boost when you’re working on a large scale project. 
 
-##Is PHP good for the future?
+## Is PHP good for the future?
 
 Yes, just because there's more competition doesn’t mean PHP is instantly out of the game. 
 
@@ -97,7 +101,7 @@ We can’t talk about PHP without mentioning the world's biggest website, Facebo
 
 Facebook isn’t going anywhere anytime soon, and neither is WordPress which currently runs around 35% of the web so it’s safe to say PHP is here to stay. 
 
-##PHP job opportunities
+## PHP job opportunities
 
 Of course we all become developers with the hopes of landing a job, and based on the current market PHP can definitely help there. 
 
@@ -107,7 +111,7 @@ If you don’t fancy the sound of freelancing that’s fine, because in the web 
 
 Overall, PHP is still widely used by the majority of the web, so there is still a consistent demand for PHP developers. Many shopping cart tools have also been built with PHP, so it is a popular choice for online businesses as well.
 
-##So, should you learn PHP in 2019?
+## So, should you learn PHP in 2019?
 
 Absolutely. 
 
