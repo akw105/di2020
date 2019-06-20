@@ -3,7 +3,7 @@ layout: post
 title: How to become a Front End Developer - The Ultimate 2019 Guide
 author: amy
 permalink: how-to-become-a-front-end-developer-ultimate-guide
-categories: skills
+categories: 'List [ "Guides", "Skills" ]'
 topcategory: guides
 ---
 If you have career dreams of being a Front-End developer but are unsure where to start, then this is the perfect guide for you. We’ll cover all the essential skills that you’ll need, how to get your own portfolio showcasing the best of your talents and even how to get the dreaded job search started.  
