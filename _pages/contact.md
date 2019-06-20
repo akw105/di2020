@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+permalink: /contact-beginners-web-dev
 ---
 <form name="contact" method="POST" data-netlify="true"> 
 <p class="mb-4">We welcome all types of feedback and suggestions or if you know of a course that could be featured on our website, please get in touch!</p>
