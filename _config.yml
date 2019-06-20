@@ -18,8 +18,8 @@ name: 'BeginnersWebDev'
 description: 'BeginnersWebDev is an online guide to learning web development online in 2019.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: ''
-url: "https://beginnerswebdev.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 email: ''
 mailchimp-list: ''
 
