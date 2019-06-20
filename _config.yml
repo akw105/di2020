@@ -29,6 +29,10 @@ permalink: pretty
 # Build settings
 theme: minima
 
+compress_html:
+  clippings: all
+  comments: [""]
+
 # minima theme settings
 show_excerpts: false # set to true to show excerpts on the homepage
 
