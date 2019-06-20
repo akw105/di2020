@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About BeginnersWebDev.com
+permalink: /about-beginners-web-development
 ---
 Have you ever Googled “web developer courses”? Well, if you have you’ll know the number of pages returned is mind-blowing. 
 
