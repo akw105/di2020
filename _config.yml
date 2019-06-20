@@ -24,7 +24,7 @@ email: ''
 mailchimp-list: ''
 
 include: ["_pages"]
-permalink: /:title/
+permalink: pretty
 
 # Build settings
 theme: minima
