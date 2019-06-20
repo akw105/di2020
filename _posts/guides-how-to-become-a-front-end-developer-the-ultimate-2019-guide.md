@@ -2,6 +2,7 @@
 layout: post
 title: How to become a Front End Developer - The Ultimate 2019 Guide
 author: amy
+permalink: how-to-become-a-front-end-developer-ultimate-guide
 categories: skills
 topcategory: guides
 ---
