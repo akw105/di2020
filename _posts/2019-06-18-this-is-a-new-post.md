@@ -11,7 +11,7 @@ tags:
   - sticky
 image: assets/images/5.jpg
 ---
-For those that don’t know, PHP stands for Hypertext Preprocessor and is a server-side programming language. For many years developers have been debating the place of PHP in the industry and whether it should be replaced with trendier technologies such as Node.JS or Ruby. 
+For many years developers have been debating the place of PHP in the industry and whether it should be replaced with newer, trendier technologies such as Node.JS or Ruby. 
 
 It’s extremely common to see posts on web developer forums asking “Is PHP dead?” (spoiler alert - it isn’t) but if that was the case, we wouldn’t have so many CMS based websites currently online.
 
