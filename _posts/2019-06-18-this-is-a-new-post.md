@@ -2,6 +2,7 @@
 layout: post
 title: Should you learn PHP in 2019 - is it worth it?
 author: amy
+permalink: /should-you-learn-php
 categories:
   - PHP
   - Technologies
