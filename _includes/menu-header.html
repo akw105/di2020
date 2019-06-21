@@ -1,4 +1,11 @@
 <!--  Replace menu links here 
+{% for p in site.pages %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ p.url }}">{{ p.title }}</a>
+        </li>
+      {% endfor %}
+-->
+      
 
 <li class="nav-item">
 <a class="nav-link" href="{{site.baseurl}}/">Home</a>
@@ -9,9 +16,3 @@
 <li class="nav-item">
 <a class="nav-link" href="{{site.baseurl}}/contact">Contact</a>
 </li>
--->
-      {% for p in site.pages %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ p.url }}">{{ p.title }}</a>
-        </li>
-      {% endfor %}
