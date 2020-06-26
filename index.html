@@ -1,190 +1,734 @@
----
-title: "Best Online Web Development Courses | Guides & Reviews"
-layout: default
-pagination:
-    enabled: true
-description: "Learning web development can be challenging. We review and pick out the best online web development courses so you can go from a coding noob to programming ninja"
----
-
-
-<div class="container">
-    
-{% if page.url == "/" %}
-    
-       <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-{% for post in site.posts %} 
-{% if post.tags contains "sticky" %}
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">{{post.title}}</h1>
-                <p class="mb-3 lead">
-                    {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-                </p>
-                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
-            </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
-            </div>
+<!--include m-tabs-events--><!DOCTYPE html><!--[if IE 8 ]>
+<html lang="en" class="no-js ie8"></html><![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="no-js ie9"></html><![endif]-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Booze - Creative HTML Template">
+    <meta name="author" content="createIT">
+    <title>Dartmouth Inn - Family pub serving home-cooked food daily.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/booze.css"><!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <script src="assets/js/es5-shim.min.js"></script><![endif]-->
+  </head>
+  <body class="cssAnimate">
+    <!-- Mobile Menu //-->
+    <div class="ct-button">
+      <button type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    </div>
+    <div class="ct-menuMobile">
+      <ul class="ct-menuMobile-navbar list-unstyled">
+        <li class="onepage"><a href="#home" class="ct-js-btnScroll">home</a></li>
+            <li class="onepage"><a href="#info" class="ct-js-btnScroll">info</a></li>
+            <li class="onepage"><a href="#menus" class="ct-js-btnScroll">menus</a></li>
+            <li class="onepage"><a href="#gallery" class="ct-js-btnScroll">gallery</a></li>
+            <li class="onepage"><a href="#reviews" class="ct-js-btnScroll">reviews</a></li>
+            <li class="onepage"><a href="#foodclub" class="ct-js-btnScroll">foodclub</a></li>
+            <li class="onepage"><a href="#functions" class="ct-js-btnScroll">functions</a></li>
+            <li class="onepage"><a href="#contact" class="ct-js-btnScroll">contact</a></li>
+      </ul>
+    </div>
+    <div id="ct-js-wrapper" class="ct-pageWrapper">
+      <div class="ct-preloader">
+        <div class="ct-preloader-content"></div>
+      </div>
+      <div class="ct-button">
+        <button type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      </div>
+      <div class="ct-menuMobile">
+        <ul class="ct-menuMobile-navbar list-unstyled">
+          <li class="onepage"><a href="#home" class="ct-js-btnScroll">home</a></li>
+            <li class="onepage"><a href="#info" class="ct-js-btnScroll">info</a></li>
+            <li class="onepage"><a href="#menus" class="ct-js-btnScroll">menus</a></li>
+            <li class="onepage"><a href="#gallery" class="ct-js-btnScroll">gallery</a></li>
+            <li class="onepage"><a href="#reviews" class="ct-js-btnScroll">reviews</a></li>
+            <li class="onepage"><a href="#foodclub" class="ct-js-btnScroll">foodclub</a></li>
+            <li class="onepage"><a href="#functions" class="ct-js-btnScroll">functions</a></li>
+            <li class="onepage"><a href="#contact" class="ct-js-btnScroll">contact</a></li>
+        </ul>
+      </div>
+      <nav class="navbar navbar-default ct-centeredMenu ct-menu--color navbar-fixed-top">
+        <div class="container">
+          <ul class="nav navbar-nav ct-leftSide ct-navbar--fadeIn">
+            <li class="onepage"><a href="#home" class="ct-js-btnScroll">home</a></li>
+            <li class="onepage"><a href="#info" class="ct-js-btnScroll">info</a></li>
+            <li class="onepage"><a href="#menus" class="ct-js-btnScroll">menus</a></li>
+            <li class="onepage"><a href="#gallery" class="ct-js-btnScroll">gallery</a></li>
+            
+          </ul>
+          <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="assets/images/the-dartmouth-inn-logo-white.png" style="max-width: 30%;padding-top: 30px;" alt="The Dartmouth Inn - The best place to eat in Totnes"></a></div>
+          <ul class="nav navbar-nav ct-rightSide">
+            <li class="onepage"><a href="#reviews" class="ct-js-btnScroll">reviews</a></li>
+            <li class="onepage"><a href="#foodclub" class="ct-js-btnScroll">foodclub</a></li>
+            <li class="onepage"><a href="#functions" class="ct-js-btnScroll">functions</a></li>
+            <li class="onepage"><a href="#contact" class="ct-js-btnScroll">contact</a></li>
+          </ul>
+          <div class="clearfix"></div>
         </div>
-    </div>
-</div> 
-{% endif %}
-{% endfor %}
-    
-<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
-<div class="row">
-    
- 
-    
-    <!-- latest post -->
-    {% assign latest_post = site.posts[0] %}
-    <div class="col-md-6">
-    <div class="card border-0 mb-4 box-shadow">   
-    <a href="{{site.baseurl}}{{latest_post.url}}">
-    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
-    </a>
-    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-    <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
-    </h2>
-    <p class="excerpt">
-        {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-    </p>
-    <div>
-        <small class="text-muted">
-            {{ latest_post.date | date: '%b %d, %Y' }}
-        </small>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    <div class="col-md-6">
-        
-        <!-- second latest post -->
-        {%- assign second_post = site.posts[1] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if second_post.image %}
-                <div class="col-md-4">
-                <a href="{{site.baseurl}}{{second_post.url}}">
-                 <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
-                </a>
+      </nav>
+      <!--Main Slider Sections//-->
+      <section id="home" class="ct-sliderSection onepager">
+        <div data-items="1" data-height="100%" class="ct-mainSlider ct-js-slick ct-slick ct-js-slick ct-slick--table">
+          <div data-background="assets/images/content/booze/slide1.jpg" class="item _image-overlay">
+            <div class="item-inner text-center">
+              <div class="ct-u-displayTableVertical">
+                <div class="ct-u-displayTableCell">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12"><a href="index.html"><img src="assets/images/best-carvery-in-devon-totnes.jpg" alt="Best cavery in devon Totnes"></a></div>
+                    </div>
+                  </div>
                 </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
-                    </h2>
-                    <small class="text-muted">
-                        {{ second_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
+              </div>
             </div>
-        
-        <!-- third latest post -->
-        {%- assign third_post = site.posts[2] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if third_post.image %}
-                <div class="col-md-4">
-                <a href="{{site.baseurl}}{{third_post.url}}">
-                 <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
-                </a>
-                </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
-                    </h2>
-                    <small class="text-muted">
-                        {{ third_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
-            </div>
-        
-        <!-- fourth latest post -->
-        {%- assign fourth_post = site.posts[3] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if fourth_post.image %}
-                <div class="col-md-4">
-                <a href="{{site.baseurl}}{{fourth_post.url}}">
-                <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
-                </a>
-                </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
-                    </h2>
-                    <small class="text-muted">
-                        {{ fourth_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
-            </div>
-        
-    </div>
-    
-</div>
-    
-  
-
-
-{% endif %} <!--endif page url is / -->
-    
-
-
-<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
-    
-<div class="row mt-3">
-   
-    <div class="col-md-8 main-loop">
-        
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
-        
-
-        {% for post in paginator.posts %}
-        
-            {% include main-loop-card.html %}
-        
-        {% endfor %}
-        
-        <div class="mt-5">
-         <!-- Pagination links -->
-            {% if paginator.total_pages > 1 %}
-            <ul class="pagination"> 
-              {% if paginator.previous_page %}
-                <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
-              {% else %}
-                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
-              {% endif %}
-
-              {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
-                {% elsif page == 1 %}
-                <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">{{ page }}</a></li>
-                {% else %}
-                <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-                {% endif %}
-              {% endfor %}
-
-              {% if paginator.next_page %}
-                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-              {% else %}
-                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
-              {% endif %}
-            </ul>
-            {% endif %}      
+          </div>
         </div>
-        
+      </section>
+
+      <section class="ct-infoSection ct-u-displayTableVertical" id="info" >
+        <div class="ct-colLeft ct-u-displayTableCell">
+          <div class="ct-colLeft-inside">
+            <div class="ct-header">Welcome back!</div>
+            <p class="ct-u-paddingBottom25">We are happy to be open once more after 3 months of closure.</p>
+            <p class="ct-u-paddingBottom30">We've got a new summer menu with pizzas and fresh salads, join us in our beautiful beer garden and celebrate our reopening from 4th July. 
+            </p>
+          </div>
+        </div>
+        <div class="ct-colRight ct-u-displayTableCell">
+          <div class="ct-colRight-inside">
+            <div class="media">
+              <div class="media-left"></div>
+              <div class="media-body">
+                <div class="media-heading">Hours</div>
+                <div class="media-content">
+                  <p>Monday to Friday &nbsp;&nbsp;&nbsp;| 10AM to 11:30PM</p>
+                  <p>Saturday & Sunday&nbsp;| 10AM to 12:30AM</p>
+                </div>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left"></div>
+              <div class="media-body">
+                <div class="media-heading">Find us</div>
+                <div class="media-content">
+                  <p>Dartmouth Inn</p>
+                  <p>Warlands, Totnes<br/>TQ9 5RP</p>
+                  <p>01803 863252</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Resturant menu section-->
+      <section id="menus" class="ct-menuSection onepager">
+        <div class="ct-bottomSection">
+          <div id="tab11" class="tab-pane">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-12"><span class="ct-iconHeader ct-iconHeader--large"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+                  <div class="ct-header ct-header--smaller ct-u-paddingTop10 ct-u-font-weight--600 ct-u-color--white ct-u-paddingBottom10">Brand new summer 2020 menu</div>
+                  <h1 class="ct-anotherHeader ct-u-paddingTop25 ct-u-marginTopMinus30 ct-u-paddingBottom25 ct-u-color--white">Eat in or Takeaway</h1>
+                </div>
+              </div>
+            </div>
+            <div class="ct-tabsContent">
+              <div class="ct-leftSide">
+                <div class="ct-leftSide-inside">
+                  <div class="ct-iconContainer text-center"><span class="ct-iconHeader ct-iconHeader--small"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+                  </div>
+                  <ul id="myTab06" role="tablist" class="ct-menuRestaurant list-unstyled">
+                    <li class="active"><a href="#tab0100111" role="tab" data-toggle="tab">Pizzas</a></li>
+                    <li><a href="#tab0100222" role="tab" data-toggle="tab">Sandwiches</a></li>
+                    <li><a href="#tab0100333" role="tab" data-toggle="tab">Burgers</a></li>
+                    <li><a href="#tab0100444" role="tab" data-toggle="tab">Pub Classics</a></li>
+                    <li><a href="#tab0100555" role="tab" data-toggle="tab">Summer Salads</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ct-rightSide tab-content">
+                <div id="tab0100111" class="tab-pane fade active in">
+                  <div class="ct-rightSideContent">
+                    <div class="ct-menu">
+                      <header class="ct-bigHeader text-center">Pizzas</header>
+                      <ul class="list-unstyled">
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Classic</span><span class="ct-price">9" £6.95 | 12" £8.95</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Cheese & Tomato</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Mighty Meaty</span><span class="ct-price">9" £8.95 | 12" £10.95</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Pepperoni, Ham, Chicken, Spicy Beef</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Vegetarian</span><span class="ct-price">9" £7.95 | 12" £9.95</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Onion, Peppers, Mushrooms, Sweetcorn, Olives</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Hawaiian</span><span class="ct-price">9" £7.95 | 12" £9.95</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Ham, Mushroom, Pineapple</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Chicken Supreme</span><span class="ct-price">9" £8.95 | 12" £10.95</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Chicken, Mushrooms, Onions, Peppers, BBQ Sauce</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Vegan</span><span class="ct-price">9" £8.95 | 12" £10.95</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Vegan cheese, Onions, Peppers, Mushrooms, Sweetcorn, Olives</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <div class="ct-additionalBox" style="position: relative;left: 0;">
+                          <div class="ct-title">Additional Toppings at £1 each</div>
+                          <p>Pepperoni, Spicy Beef, Mushrooms, Onions, Extra Cheese, Chicken, Olives, Ham, Pineapple, Sweetcorn, Jalapeño, Peppers</p>
+                        </div>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="ct-content"><img src="assets/images/delux-burger-food-dartmouth-inn-totnes.jpg" alt="Best food in Totnes, Devon"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              <!-- end -->
+
+              <div id="tab0100222" class="tab-pane fade">
+                <div class="ct-rightSideContent">
+                  <div class="ct-menu">
+                    <header class="ct-bigHeader text-center">Sandwiches</header>
+                    <ul class="list-unstyled">
+                      <div class="ct-additionalBox" style="position: relative;left: 0;">
+                        <p>All served with a handful of chips & a choice of bloomer or granary bread</p>
+                      </div>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Fresh Crab</span><span class="ct-price">£9.95</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Bacon, Lettuce & Tomato</span><span class="ct-price">£7.45</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Mature Cheddar & Pickle</span><span class="ct-price">£7.45</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Mustard Roasted Beef</span><span class="ct-price">£7.45</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Homecooked Ham & Mustard</span><span class="ct-price">£7.45</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Chicken, Bacon & Mayo</span><span class="ct-price">£7.95</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="ct-content"><img src="assets/images/delux-burger-food-dartmouth-inn-totnes.jpg" alt="Best food in Totnes, Devon"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <!-- end -->
+
+                <div id="tab0100333" class="tab-pane fade">
+                  <div class="ct-rightSideContent">
+                    <div class="ct-menu">
+                      <header class="ct-bigHeader text-center">Burgers</header>
+                      <ul class="list-unstyled">
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <div class="ct-additionalBox" style="position: relative;left: 0;">
+                              <p>All served with onion rings & chips</p>
+                            </div>
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Dartmouth De Luxe</span><span class="ct-price">£10.45</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Halls Beef Burger, Breaded Chicken, Bacon, Cheese, Mayo, Salad</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Classic Cheese</span><span class="ct-price">£9.45</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Halls Beef Burger, Cheese</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Vegan</span><span class="ct-price">£9.45</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Vegan Bun, Vegan Burger, Vegan Mayo, Salad</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="ct-dottedBox list-unstyled">
+                            <li class="ct-dottedMenu">
+                              <div class="ct-dottedBg"></div><span class="ct-name">Chicken Club</span><span class="ct-price">£10.45</span>
+                              <div class="clearfix"></div>
+                              <p class="ct-dottedMenuDetails">Chicken Breast, Cheese, Bacon, BBQ Sauce, Mayo</p>
+                            </li>
+                          </ul>
+                        </li>
+                                               
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="ct-content"><img src="assets/images/delux-burger-food-dartmouth-inn-totnes.jpg" alt="Best food in Totnes, Devon"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              <!-- end -->
+              <div id="tab0100444" class="tab-pane fade">
+                <div class="ct-rightSideContent">
+                  <div class="ct-menu">
+                    <header class="ct-bigHeader text-center">Pub Classics</header>
+                    <ul class="list-unstyled">
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Our Famous Steak Pie</span><span class="ct-price">£9.95</span>
+                            <div class="clearfix"></div>
+                            <p class="ct-dottedMenuDetails">with Minted New Potatoes or Chips</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Ham & 3 Cheese Ploughmans</span><span class="ct-price">£10.95</span>
+                            <div class="clearfix"></div>
+                            <p class="ct-dottedMenuDetails">Cheddar, Brie, Stilton, Ham, Fresh Bloomer Slices, Pickles</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Homemade Lasagne</span><span class="ct-price">£9.95</span>
+                            <div class="clearfix"></div>
+                            <p class="ct-dottedMenuDetails">Beef or Vegetarian with Salad & Chips</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">BBQ Chicken Melt</span><span class="ct-price">£10.95</span>
+                            <div class="clearfix"></div>
+                            <p class="ct-dottedMenuDetails">Chicken Breast, Melted Cheese, Bacon, BBQ Sauce, Salad, Chips</p>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Freshly Battered Cod & Chips</span><span class="ct-price">£9.95</span>
+                            <div class="clearfix"></div>
+                            <p class="ct-dottedMenuDetails">with Mushy Peas & Tartare Sauce</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Scampi & Chips</span><span class="ct-price">£9.95</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">All Day Breakfast</span><span class="ct-price">£6.95</span>
+                            <div class="clearfix"></div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Pan Fried Liver & Onions</span><span class="ct-price">£9.95</span>
+                            <div class="clearfix"></div>
+                            <p class="ct-dottedMenuDetails">with New Potatoes & Vegetables</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="ct-dottedBox list-unstyled">
+                          <li class="ct-dottedMenu">
+                            <div class="ct-dottedBg"></div><span class="ct-name">Roast Beef</span><span class="ct-price">£8.95</span>
+                            <div class="clearfix"></div>
+                            <p class="ct-dottedMenuDetails">with Roast Potatoes & Vegetables</p>
+                          </li>
+                        </ul>
+                      </li>
+                                             
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="ct-content"><img src="assets/images/fried-brie-raspberry-dressing-food-dartmouth-inn.jpg" alt="Best food in Totnes, Devon"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            <!-- end -->
+            <div id="tab0100555" class="tab-pane fade">
+              <div class="ct-rightSideContent">
+                <div class="ct-menu">
+                  <header class="ct-bigHeader text-center">Summer Salads</header>
+                  <ul class="list-unstyled">
+                    <div class="ct-additionalBox" style="position: relative;left: 0;">
+                      <p>All served with fresh bloomer or granary bread</p>
+                    </div>
+                    <li>
+                      <ul class="ct-dottedBox list-unstyled">
+                        <li class="ct-dottedMenu">
+                          <div class="ct-dottedBg"></div><span class="ct-name">Fresh Crab Salad</span><span class="ct-price">£10.95</span>
+                          <div class="clearfix"></div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="ct-dottedBox list-unstyled">
+                        <li class="ct-dottedMenu">
+                          <div class="ct-dottedBg"></div><span class="ct-name">Chicken Caesar Salad</span><span class="ct-price">£9.95</span>
+                          <div class="clearfix"></div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="ct-dottedBox list-unstyled">
+                        <li class="ct-dottedMenu">
+                          <div class="ct-dottedBg"></div><span class="ct-name">Deep Dried Brie</span><span class="ct-price">£10.95</span>
+                          
+                          <div class="clearfix"></div><p class="ct-dottedMenuDetails">with a Raspberry Dressing</p>
+                        </li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="ct-content"><img src="assets/images/fried-brie-raspberry-dressing-food-dartmouth-inn.jpg" alt="Best food in Totnes, Devon"></div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          <!-- end -->
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Information Sections-->
+      <section id="intro" class="ct-introSection ct-u-backgroundColorDark text-center">
+        <span class="ct-iconHeader ct-iconHeader--large"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+        <header class="ct-bigHeader">Our live music</header>
+        <p>will be back shortly!</p>
+      </section>
+
+      <section id="gallery" class="ct-gallerySection onepager onepager_6" style="display: block; position: relative; float: none;">
+        <div class="ct-bottomContent">
+          <div id="ct-gallery" class="ct-gallery ct-gallery--col5 ct-js-popupGallery ct-bottomBorder is-loaded">
+            <div class="_js-lightGallery">
+                
+              <a href="assets\images\dartmouth-inn-more-seating.JPG" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-more-seating.JPG" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+                
+              <a href="assets\images\dartmouth-inn-bar-area.JPG" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-bar-area.JPG" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+
+              <a href="assets\images\dartmouth-inn-pool-room.JPG" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-pool-room.JPG" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+
+              <!--- --- -->
+              <a href="assets\images\dartmouth-inn-sofa-area.JPG" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-sofa-area.JPG" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+                
+              <a href="assets\images\dartmouth-inn-totnes-dining.JPG" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-totnes-dining.JPG" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+                
+              <a href="assets\images\dartmouth-inn-totnes-food-seating.JPG" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-totnes-food-seating.JPG" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+
+              <a href="assets\images\dartmouth-inn-totnes-seating.JPG" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-totnes-seating.JPG" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+
+              <!--- --- -->
+              <a href="assets\images\watching-the-sport-in-totnes.jpg" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\watching-the-sport-in-totnes.jpg" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+
+              <a href="assets\images\dartmouth-inn-busy-outside.jpg" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-busy-outside.jpg" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+
+              <a href="assets\images\dartmouth-inn-flowers-benches.jpg" class="ct-gallery-item ct-gallery-item--masonry">
+                <img src="assets\images\dartmouth-inn-flowers-benches.jpg" alt="The Dartmouth Inn, best place to eat in totnes">
+              </a>
+
+
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!--Testimonials-->
+      <section id="reviews" data-arrows="false" data-cssease="linear" data-fade="true" data-autoplay="true" data-dots="true" class="ct-testimonialsSection ct-slickBox ct-js-slick">
+        <div class="item" itemtype="http://schema.org/Review">
+          <div class="ct-u-displayTable ct-u-displayTableVertical">
+            <div class="ct-u-displayTableCell">
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col-md-8 col-md-offset-2 ct-testimonials-content"><span class="ct-iconHeader ct-iconHeader--large"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+                    <div class="ct-testimonials-description text-center">
+                      <span style="display:none" itemprop="name">The Dartmouth Inn, Totnes</span>
+                      <p itemprop="reviewBody">The food here was outstanding The staff were very welcoming such a lovely atmosphere would recommend the roast if you go here very good value for money on everything overall very proud</p>
+                      <span style="display:none" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/rating">
+                        <meta itemprop="worstRating" content="0">
+                        <span itemprop="ratingValue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" itemtype="http://schema.org/Review">
+          <div class="ct-u-displayTable ct-u-displayTableVertical">
+            <div class="ct-u-displayTableCell">
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col-md-8 col-md-offset-2 ct-testimonials-content"><span class="ct-iconHeader ct-iconHeader--large"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+                    <div class="ct-testimonials-description text-center">
+                      <span style="display:none" itemprop="name">The Dartmouth Inn, Totnes</span>
+                      <p itemprop="reviewBody">We all had the Roast and it was tasty, the beef is highly recommended and would definitely go there again!<br>A great place to eat.</p>
+                      <span style="display:none" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/rating">
+                        <meta itemprop="worstRating" content="0">
+                        <span itemprop="ratingValue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" itemtype="http://schema.org/Review">
+          <div class="ct-u-displayTable ct-u-displayTableVertical">
+            <div class="ct-u-displayTableCell">
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col-md-8 col-md-offset-2 ct-testimonials-content"><span class="ct-iconHeader ct-iconHeader--large"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+                    <div class="ct-testimonials-description text-center">
+                      <span style="display:none" itemprop="name">The Dartmouth Inn, Totnes</span>
+                      <p itemprop="reviewBody">You feel right at home the moment you step into this great little pub. The warm and welcoming atmosphere and the friendly staff make it a perfect place. Great value and good food. We will be back.</p>
+                      <span style="display:none" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/rating">
+                        <meta itemprop="worstRating" content="0">
+                        <span itemprop="ratingValue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="functions" class="ct-introSection ct-u-backgroundColorDark text-center">
+      <div class="row text-center">
+        <div class="col-md-12"><span class="ct-iconHeader ct-iconHeader--large"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+          <div class="ct-header ct-header--smaller ct-u-paddingTop10 ct-u-font-weight--600  ct-u-color--white">We have a</div>
+          <h1 class="ct-anotherHeader ct-u-paddingTop25 ct-u-marginTopMinus30 ct-u-color--white">Large Function Room</h1>
+          <div class="ct-header ct-header--smaller ct-u-paddingTop10 ct-u-font-weight--600  ct-u-color--white">that can be booked for any event!</div>
+          <br/><br><br>
+          <p style="font-size: 20px;line-height: 22px;">
+
+            Our function room can hold up to 80 people <br/>and features a Private Bar which can be available for £40.
+            <br/><br/>
+            We can also provide a sit-down meal or a buffet to suit any budget.<br/><br/><small>Contact Rob or Kate to book</small></p>
+        </div>
+      </div>
+            </section>
+
+      <!--Newsletter-->
+      <section class="ct-newsletterSection" id="foodclub">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"><span class="ct-iconHeader ct-iconHeader--large"><i class="fa fa-close"></i><i class="fa fa-close"></i><i class="fa fa-close"></i></span>
+              <h5 class="ct-header ct-u-paddingTop10">Dont miss a thing!</h5>
+              <h2 class="ct-anotherHeader ct-anotherHeader--header">Subscribe To Our Newsletter & Join Our Food Club</h2>
+              <p>By joining our food club you will receive monthly emails with vouchers for exclusive deals and offers. </p>
+              <p>To join, we just need your email address!</p>        <br>
+                      <a href="http://eepurl.com/dp69jH" target="_blank" class="btn btn-primary btn-border btn-sm ct-js-btnSize ct-js-btnScroll">Click Here To Sign Up</a>
+                      <!-- Begin MailChimp Signup Form 
+                      <div class="food-club-newsletter">
+                          <br/>
+                        <div id="mc_embed_signup_example" class="full-subscribe-form">
+              <form action="https://dartmouthinntotnes.us9.list-manage.com/subscribe/post?u=ac03d40e02541c477de610eb2&amp;id=21f14df6f5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to our mailing list</label><br/><br/>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <br/><br/>
+                <input required style="width:auto;" type="checkbox" value="2"><label>I agree to have my personal data stored in order to receive emails.</label><br/>
+                <input required style="width:auto;" type="checkbox" value="2"><label>I agree to receive marketing emails once a month.</label>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ac03d40e02541c477de610eb2_21f14df6f5" tabindex="-1" value=""></div>
+                  <div class="clear"><br/><br/><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                  </div>
+              </form>
+                        <div class="clearfix"></div>
+                        </div>
+                        </div>-->
+                      <!--End mc_embed_signup-->
+                      <br><br>
+                  <small>Your data will be stored only for use by The Dartmouth Inn to send out once a month emails containing marketing offers,<br>your data will not be passed on to anyone else and you may withdraw your data at any time. </small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="ct-footer">
+        <section class="ct-preFooter">
+          <div class="container">
+            <div class="row ct-row">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-left"><a href="index.html"><img src="assets/images/best-carvery-in-devon-totnes.jpg" alt="Best Places to eat in totnes"></a></div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ct-contactBox">
+                <h6 class="ct-headerBottom">Contact us</h6>
+                <ul class="list-unstyled ct-contactList">
+                  <li>Just a short walk from the local bus stops & train stations, you can find us at Warlands, Totnes.</li>
+                  <li>Address:<br/> The Dartmouth Inn <br/> Warlands, Totnes, Devon, TQ9 5EL</li>
+                  <li>Phone:<br/>Tel:<a href="tel:01803863252">&nbsp;01803 863252</a></li>
+                  <li>Web:<br/><a href="/">www.dartmouthinntotnes.co.uk<br/></a><a href="mailto:thedartmouthinn.totnes@gmail.com">thedartmouthinn.totnes@gmail.com</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ct-followBox">
+                <h6 class="ct-headerBottom">Follow us</h6>
+                <ul class="list-unstyled ct-footerUp">
+                  <li><a href="https://www.facebook.com/createITpl">Facebook</a><i data-left="4" data-top="0" data-icon-size="23" class="fa fa-facebook ct-js-position ct-js-iconSize"></i></li>
+                  <li><a href="#">Instagram</a><i data-left="0" data-top="0" data-icon-size="27" class="fa fa-instagram ct-js-position ct-js-iconSize"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div><a href="#" class="ct-js-btnScrollUp is-active"><span><i class="fa fa-angle-up"></i></span></a>
+        </section>
+        <section class="ct-postFooter">
+          <div class="container ct-containerFix">
+            <div class="row">
+              <div class="ct-u-displayTableVertical">
+                <div class="ct-u-displayTableCell ct-footerCol1">
+                  <p class="ct-copyright">Copyright &copy; 2020 Kingsbridge Taverns Ltd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
     </div>
-    
-    <div class="col-md-4">
-        {% include sidebar-featured.html %}    
-    </div>
-    
-</div>
 
 
+    <!-- JavaScripts-->
+    <script src="assets/js/booze.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--Twitter-->
+    <script src="assets/twitter/js/jquery.tweet.js"></script>
+    <!-- Google Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCheNy7zWQrflLP-TMOt8rmOFWt22GbuZA&libraries=places,geometry"></script>
 
-</div>
+    <script src="assets/js/gmaps/gmap3.min.js"></script>
+    <script src="assets/js/gmaps/init.js"></script>
+    <!-- Grayscale Plugin-->
+    <script src="assets/js/jquery.gray.min.js"></script>
+    <!-- Portfolio Isotope-->
+    <script src="assets/js/portfolio/jquery.isotope.min.js"></script>
+    <script src="assets/js/portfolio/imagesloaded.js"></script>
+    <script src="assets/js/portfolio/init.js"></script>
+    <!-- Light Gallery-->
+    <script src="assets/js/lightgallery/lightgallery-all.js"></script>
+    <script src="assets/js/lightgallery/init.js"></script>
+    <!-- One-Pager Scroller-->
+    <script src="assets/js/jquery.pagescroller.lite.js"></script>
+    <!-- Contact Form-->
+    <script src="assets/form/js/form.js"></script>
+    <link rel="stylesheet" href="assets/css/booze.css">
+  </body>
+</html>
